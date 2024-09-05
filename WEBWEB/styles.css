@@ -1,0 +1,259 @@
+html, body {
+    overflow-x: hidden; /* Oculta qualquer conteúdo que ultrapasse a largura da janela */
+    margin: 0; /* Remove margens padrão do body */
+    padding: 0; /* Remove padding padrão do body */
+}
+
+/* Garante que seções e contêineres não ultrapassem a largura da tela */
+.container, .container-fluid, .common-section {
+    max-width: 100%; /* Garante que o container não exceda a largura da tela */
+    box-sizing: border-box; /* Inclui padding e bordas na largura total */
+}
+
+/* Adaptação para elementos com padding lateral significativo */
+.common-section {
+    padding: 0 2vw; /* Ajuste o padding lateral para um valor menor se necessário */
+}
+
+/* Se necessário, ajuste os paddings laterais das seções específicas */
+#time, .icons-section {
+    padding: 0 2vw; /* Ajuste o padding lateral para um valor menor se necessário */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-align: justify;
+}
+
+.navbar {
+    background-color: #2d362d; /* Verde escuro */
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .nav-link.active {
+    color: #28a745; /* Verde claro */
+}
+
+/* CSS para a imagem de fundo do hero */
+.hero-image {
+    background-image: url('img/banner.png');
+    background-size: cover; /* Ajusta a imagem para cobrir todo o elemento */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    height: 90vh;
+    width: 100%;
+    display: flex; /* Usa flexbox para centralizar o conteúdo */
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    text-align: center; /* Centraliza o texto dentro do hero */
+    color: white; /* Define a cor do texto */
+    margin-bottom: 30vh;
+}
+
+.hero-text h1 {
+    font-family: 'Montserrat', sans-serif; /* Fonte para o título */
+    font-size: 3rem; /* Tamanho da fonte para o título */
+    margin: 0; /* Remove margem padrão */
+    font-weight: bold; /* Deixa o texto mais grosso */
+}
+
+.hero-text p {
+    font-family: 'Montserrat', sans-serif; /* Fonte para o parágrafo */
+    font-size: 1.5rem; /* Tamanho da fonte para o parágrafo */
+    margin: 0; /* Remove margem padrão */
+    font-weight: 300; /* Fonte mais fina */
+}
+
+/* Classe comum para seções */
+.common-section {
+    max-width: 100%; /* Permite que a seção ocupe a largura total da página */
+    margin: 0; /* Remove a margem horizontal */
+    padding: 0 26vw; /* Mantém o padding lateral */
+}
+
+.section-title {
+    font-weight: 600;
+}
+
+/* Aplicar estilos aos títulos e textos das seções */
+.common-section .section-title {
+    color: rgb(39, 51, 38);
+    font-size: 2.5rem; /* Tamanho do título */
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.common-section .section-text {
+    font-size: 1.2rem; /* Tamanho do texto */
+    text-align: justify; /* Justifica o texto */
+    line-height: 1.6; /* Melhora a legibilidade */
+}
+
+.sobre-nos .section-title {
+    color: rgb(39, 51, 38);
+    font-size: 2.5rem; /* Ajuste o tamanho do título conforme necessário */
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.sobre-nos .section-text {
+    font-size: 1.2rem; /* Reduz o tamanho da fonte */
+    text-align: justify; /* Justifica o texto */
+    margin: 0 auto; /* Centraliza a seção */
+    max-width: 800px; /* Define uma largura máxima para o texto */
+    padding: 0 20px; /* Adiciona padding lateral */
+    box-sizing: border-box; /* Inclui padding na largura total */
+    line-height: 1.6; /* Melhora a legibilidade */
+}
+
+/* Adicione um container para dar padding e centralizar o texto */
+.sobre-nos .container-text {
+    padding: 0 20px; /* Adiciona padding lateral para evitar que o texto fique muito próximo das bordas */
+    max-width: 800px; /* Define uma largura máxima para o texto */
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+}
+
+/* Estilizar a frase entre aspas */
+.text-center.mt-4 p {
+    font-style: italic; /* Texto em itálico */
+    text-align: center; /* Centraliza o texto */
+    border: 2px solid white; /* Borda branca ao redor da frase */
+    padding: 20px; /* Adiciona espaço interno */
+    background-color: #f8f9fa; /* Cor de fundo leve */
+    max-width: 800px; /* Define uma largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    
+}
+
+#time {
+    padding: 0 20vw; /* Padding lateral para o conteúdo */
+}
+
+/* Define a largura máxima para a descrição dos membros do time */
+.team-member-description-container {
+    max-width: 350px; /* Ajuste a largura máxima conforme necessário */
+    margin: 0 auto; /* Centraliza o texto dentro do contêiner */
+}
+
+
+/* Imagens do time redondas com borda verde */
+.team-photo {
+    border-radius: 50%; /* Mantém as imagens redondas */
+    border: 8px solid #afbab2; /* Borda verde clara */
+    width: 200px; /* Aumenta a largura */
+    height: 200px; /* Aumenta a altura */
+    object-fit: cover; /* Ajusta o conteúdo da imagem para cobrir o elemento */
+}
+
+/* Estilizar o nome dos membros do time */
+.team-member-name {
+    font-weight: bold; /* Nome em negrito */
+    margin-top: 15px; /* Espaço acima do nome */
+    margin-bottom: 10px; /* Espaço abaixo do nome */
+}
+
+/* Estilizar a descrição dos membros do time */
+.team-member-description {
+    color: #666; /* Cor do texto levemente mais clara */
+    margin-top: 10px; /* Espaço acima da descrição */
+    margin-bottom: 15px; /* Espaço abaixo da descrição */
+}
+
+/* Ajuste no espaçamento geral dos membros do time */
+.team-member {
+    margin-bottom: 30px; /* Espaço abaixo de cada membro do time */
+    padding: 0 30px;
+}
+
+
+/* Ajuste na seção de ícones para reduzir o espaçamento entre os itens */
+.icons-section {
+    display: flex; /* Usa flexbox para alinhar itens horizontalmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha se necessário */
+    gap: 20px; /* Define um espaço entre os itens */
+    margin-bottom: 30vh;
+}
+
+.icons-section .col-md-4 {
+    padding: 20px; /* Adiciona espaço interno */
+    background-color: white; /* Fundo branco para contraste */
+    border: 5px solid white; /* Borda branca ao redor de cada ícone */
+    max-width: 300px; /* Define uma largura máxima */
+    box-sizing: border-box; /* Inclui borda e padding na largura total */
+    flex: 1 1 300px; /* Permite que os itens se ajustem ao tamanho disponível */
+}
+
+/* Ajuste na centralização do texto dos ícones */
+.icons-section h5 {
+    margin-bottom: 15px; /* Espaço abaixo dos títulos */
+    text-align: center; /* Centraliza os títulos */
+}
+
+/* Ajustar o tamanho da fonte e a margem dos textos na seção de ícones */
+.icons-section p {
+    font-size: 1rem; /* Tamanho da fonte ajustado */
+    text-align: justify; /* Justifica o texto */
+    margin: 0; /* Remove margens padrão */
+}
+
+.icons-section img {
+    max-width: 120px; /* Define uma largura máxima para as imagens */
+    max-height: 120px; /* Define uma altura máxima para as imagens */
+    margin-bottom: 15px; /* Espaço abaixo das imagens */
+    object-fit: contain; /* Mantém a proporção das imagens */
+}
+
+
+/* Estilizar a frase entre aspas */
+.text-center.mt-4 p {
+    font-style: italic; /* Texto em itálico */
+    text-align: center; /* Centraliza o texto */
+    border: 2px solid white; /* Borda branca ao redor da frase */
+    padding: 20px; /* Adiciona espaço interno */
+    background-color: #f8f9fa; /* Cor de fundo leve */
+    max-width: 800px; /* Define uma largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Garantir que o formulário ocupe toda a largura da página */
+#contact {
+    background-color: #333; /* Fundo cinza escuro para o formulário */
+    padding: 40px 15px; /* Padding para dar espaço ao redor do formulário */
+    color: white; /* Cor do texto dentro do formulário */
+    width: 100%; /* Garante que o fundo ocupe toda a largura */
+    margin: 0; /* Remove margens externas */
+}
+
+#contact .container {
+    padding: 0 15px; /* Padding lateral interno para o conteúdo */
+    max-width: 1200px; /* Define uma largura máxima para o conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+#contact .form-group {
+    margin-bottom: 15px; /* Espaço entre os campos do formulário */
+}
+
+#contact .btn-primary {
+    background-color: #28a745; /* Cor de fundo verde para o botão */
+    border-color: #28a745; /* Cor da borda do botão */
+    font-weight: bold; /* Texto do botão em negrito */
+}
+
+#contact .btn-primary:hover {
+    background-color: #218838; /* Cor de fundo verde escuro para o hover */
+    border-color: #1e7e34; /* Cor da borda do botão no hover */
+}
+
+/* Estilo para o footer */
+footer {
+    background-color: white; /* Fundo branco para o footer */
+    padding: 20px 15px; /* Padding para dar espaço ao redor do conteúdo */
+    text-align: center; /* Centraliza o texto no footer */
+    color: #333; /* Cor do texto no footer */
+}
